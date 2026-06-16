@@ -25,9 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         body: formData
       });
 
-      if (response.status === 413) {
-        throw new Error("The photos you attached are too large. Please attach fewer or smaller photos (max 10MB total).");
-      }
+
 
       let data;
       try {
@@ -52,20 +50,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // File upload visual feedback
-  const fileInput = document.getElementById('photos');
-  const uploadUiText = document.querySelector('.upload-ui span');
-  
-  if (fileInput && uploadUiText) {
-    fileInput.addEventListener('change', () => {
-      if (fileInput.files && fileInput.files.length > 0) {
-        const fileCount = fileInput.files.length;
-        uploadUiText.innerText = `${fileCount} photo${fileCount > 1 ? 's' : ''} selected ready for upload!`;
-        uploadUiText.style.color = '#38bdf8'; // Highlight color to show success
-      } else {
-        uploadUiText.innerText = 'Click or drag photos here';
-        uploadUiText.style.color = '';
-      }
-    });
-  }
 });
