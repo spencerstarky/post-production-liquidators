@@ -25,7 +25,16 @@ document.addEventListener('DOMContentLoaded', () => {
         body: formData
       });
 
-      const data = await response.json();
+      if (response.status === 413) {
+        throw new Error("The photos you attached are too large. Please attach fewer or smaller photos (max 10MB total).");
+      }
+
+      let data;
+      try {
+        data = await response.json();
+      } catch (e) {
+        throw new Error("Failed to send request. Server returned status: " + response.status);
+      }
 
       if (data.success) {
         alert('Your buyout quote request has been sent successfully! We will get back to you within 2 hours.');
@@ -36,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     } catch (err) {
       console.error(err);
-      alert('There was an error submitting the form. Please make sure you have added your Web3Forms Access Key to the code.');
+      alert('Error from Web3Forms: ' + err.message);
     } finally {
       submitBtn.innerText = originalBtnText;
       submitBtn.disabled = false;
