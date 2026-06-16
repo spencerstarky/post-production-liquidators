@@ -10,7 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@vercel/blob": "^2.4.0",
     "resend": "^6.12.4"
   }
 }
