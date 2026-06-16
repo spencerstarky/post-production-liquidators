@@ -134,7 +134,9 @@
         <h2>Request a Soundstage Wrap Clearance</h2>
           <p>Fill out the details below to calculate your buyout estimate.</p>
         <form id="quote-form" class="lead-form">
-          
+          <!-- TODO: Add your Web3Forms Access Key below -->
+          <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+          <input type="hidden" name="subject" value="New Buyout Quote Request - That's a Wrap!">
           <div class="input-group">
             <label for="prod-name">Production Name / Working Title</label>
             <input type="text" id="prod-name" name="Production Name" required placeholder="e.g. Untitled Hero Project">
@@ -256,6 +258,6 @@
     </div>
   </footer>
 
-  <script type="module" src="script.js?v=3"></script>
+  <script src="script.js?v=4"></script>
 </body>
 </html>
