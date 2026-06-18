@@ -50,4 +50,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // Clapboard Scroll Animation
+  const topStick = document.querySelector('.top-stick');
+  if (topStick) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        topStick.classList.add('closed');
+      } else {
+        topStick.classList.remove('closed');
+      }
+    });
+  }
+
 });
