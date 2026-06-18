@@ -549,6 +549,7 @@ footer {
   }
   .hero-content { margin: 0 auto; }
   .clapboard-container { transform: none; margin: 0 auto; }
+  .top-stick { transform: rotate(0deg); }
   
   .lead-form {
     grid-template-columns: 1fr;
