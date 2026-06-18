@@ -131,8 +131,8 @@
   <section id="quote" class="lead-form-section">
     <div class="container">
       <div class="form-wrapper">
-        <h2>Request a Soundstage Wrap Clearance</h2>
-          <p>Fill out the details below to calculate your buyout estimate.</p>
+        <h2>Request a Wrap & Logistics Review</h2>
+        <p>Submit your project details below. Our logistics team will review your timeline and inventory metrics to coordinate the ideal load-out logistics for your wrap week. Reviewing your submission is completely free!</p>
         <form id="quote-form" class="lead-form">
           <!-- TODO: Add your Web3Forms Access Key below -->
           <input type="hidden" name="access_key" value="615a73ac-61e0-4c55-af25-ca04cf0a78c6">
@@ -182,6 +182,32 @@
                 <input type="checkbox" name="wardrobe-type" value="scifi">
                 <span class="pill-content">Sci-Fi / Custom-Built</span>
               </label>
+              <label class="radio-pill">
+                <input type="checkbox" name="wardrobe-type" value="high-fashion">
+                <span class="pill-content">High Fashion/Luxury/Designer</span>
+              </label>
+              <label class="radio-pill">
+                <input type="checkbox" name="wardrobe-type" value="background-heavy">
+                <span class="pill-content">Background Heavy (Blanks/Uniforms)</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="input-group full-width">
+            <label>Current Wardrobe Packing Status</label>
+            <div class="radio-pill-group">
+              <label class="radio-pill">
+                <input type="radio" name="packing-status" value="hanging" checked>
+                <span class="pill-content">Hanging/Loose on Racks</span>
+              </label>
+              <label class="radio-pill">
+                <input type="radio" name="packing-status" value="packed">
+                <span class="pill-content">Packed Wardrobe Boxes</span>
+              </label>
+              <label class="radio-pill">
+                <input type="radio" name="packing-status" value="mixture">
+                <span class="pill-content">Mixture of Both</span>
+              </label>
             </div>
           </div>
 
@@ -192,21 +218,21 @@
                 <input type="radio" name="inventory-size" value="small" checked>
                 <span class="pill-content">
                   <span class="size-title">Small</span>
-                  <span class="size-desc">1 - 5 Rolling Racks / Under 20 Boxes</span>
+                  <span class="size-desc">1-5 Z Racks or Under 15 Boxes</span>
                 </span>
               </label>
               <label class="radio-pill size-pill">
                 <input type="radio" name="inventory-size" value="medium">
                 <span class="pill-content">
                   <span class="size-title">Medium</span>
-                  <span class="size-desc">6 - 15 Rolling Racks</span>
+                  <span class="size-desc">6-15 Z Racks or 15-40 Boxes</span>
                 </span>
               </label>
               <label class="radio-pill size-pill">
                 <input type="radio" name="inventory-size" value="large">
                 <span class="pill-content">
                   <span class="size-title">Large</span>
-                  <span class="size-desc">15+ Racks / Full Warehouse</span>
+                  <span class="size-desc">15+ Z Racks or 40+ Boxes</span>
                 </span>
               </label>
             </div>
@@ -217,7 +243,7 @@
             <textarea id="additional-info" name="Additional Info" rows="4" placeholder="Any special requirements, restrictions, or extra details we should know about?"></textarea>
           </div>
 
-          <button type="submit" class="submit-btn">Get a Buyout Quote Within 2 Hours</button>
+          <button type="submit" class="submit-btn">Submit</button>
         </form>
       </div>
     </div>
