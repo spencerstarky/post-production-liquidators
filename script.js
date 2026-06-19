@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       if (data.success) {
-        alert('Your buyout quote request has been sent successfully! We will get back to you within 2 hours.');
+        alert('Your submission has been sent. A team member will review your form and be in touch shortly. Thank you!');
         form.reset();
       } else {
         throw new Error(data.message || 'Failed to send request.');
