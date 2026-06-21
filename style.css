@@ -591,6 +591,8 @@ footer {
   .clapboard-container {
     display: block;
     min-width: 650px;
+    margin-left: 0;
+    margin-right: 0;
     transform: rotateY(-15deg) rotateX(10deg) scale(0.55);
     transform-origin: top center;
     margin-bottom: -120px;
