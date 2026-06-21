@@ -50,16 +50,32 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Clapboard Scroll Animation
+  // Clapboard Scroll Animation & Text Fade
   const topStick = document.querySelector('.top-stick');
-  if (topStick) {
-    window.addEventListener('scroll', () => {
+  const textWrapper = document.querySelector('.hero-text-wrapper');
+  
+  window.addEventListener('scroll', () => {
+    // Arm closing
+    if (topStick) {
       if (window.scrollY > 50) {
         topStick.classList.add('closed');
       } else {
         topStick.classList.remove('closed');
       }
-    });
-  }
+    }
+    
+    // Text fade on mobile
+    if (textWrapper) {
+      if (window.innerWidth <= 768) {
+        // Fade out between 100px and 220px of scroll
+        let opacity = 1 - ((window.scrollY - 100) / 120);
+        // Clamp between 0 and 1
+        opacity = Math.max(0, Math.min(1, opacity));
+        textWrapper.style.opacity = opacity;
+      } else {
+        textWrapper.style.opacity = 1;
+      }
+    }
+  });
 
 });
