@@ -595,7 +595,7 @@ footer {
   }
   .hero-actions { 
     order: 4; 
-    margin-top: -6rem; 
+    margin-top: -7rem; 
     position: relative; 
     z-index: 10;
   }
@@ -614,7 +614,7 @@ footer {
   .hero-visual {
     width: 100%;
     min-width: 0;
-    margin-top: 4rem;
+    margin-top: 7rem;
     order: 3;
   }
   .clapboard-container {
@@ -624,7 +624,7 @@ footer {
     margin-right: 0;
     transform: rotateY(-15deg) rotateX(10deg) scale(0.55);
     transform-origin: top center;
-    margin-bottom: -120px;
+    margin-bottom: 0;
     box-shadow: none;
   }
   .form-wrapper h2 {
