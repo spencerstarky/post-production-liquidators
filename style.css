@@ -585,12 +585,16 @@ footer {
   .hero-content {
     display: contents;
   }
-  .hero h1 { 
-    order: 1; 
+  .hero-text-wrapper {
+    order: 1;
+    position: sticky;
+    top: 4rem;
+    z-index: 5;
+  }
+  .hero-text-wrapper h1 { 
     margin-bottom: 0.25rem; 
   }
-  .hero p { 
-    order: 2; 
+  .hero-text-wrapper p { 
     margin-bottom: 0.5rem; 
   }
   .hero-actions { 
