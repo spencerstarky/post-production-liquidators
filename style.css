@@ -429,7 +429,7 @@ h1, h2, h3, h4 {
 
 .radio-pill input:checked + .pill-content {
   border-color: var(--accent-color);
-  background: rgba(234, 179, 8, 0.1);
+  background: rgba(59, 130, 246, 0.1);
   color: var(--accent-color);
 }
 
@@ -543,6 +543,8 @@ footer {
 
 /* Responsive */
 @media (max-width: 900px) {
+  .headline { font-size: 2.5rem; }
+  .subheadline { font-size: 1rem; }
   .hero {
     grid-template-columns: 1fr;
     text-align: center;
@@ -561,6 +563,29 @@ footer {
   }
   
   .form-wrapper { padding: 2rem; }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .form-wrapper {
+    padding: 1.25rem;
+  }
+  .radio-pill-group {
+    flex-direction: column;
+  }
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .studios {
+    justify-content: center;
+  }
 }
 
 /* Layout Utilities for Images */
