@@ -566,11 +566,31 @@ footer {
 }
 
 @media (max-width: 600px) {
+  .container {
+    padding: 0 1rem;
+  }
   .navbar {
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
     padding: 1rem;
+  }
+  .hero {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .clapboard-content .row {
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
+  .clapboard-content .label {
+    width: 100%;
+    font-size: 0.8rem;
+    margin-bottom: -0.25rem;
+  }
+  .clapboard-content .value {
+    font-size: 1.1rem;
+    word-break: break-word;
   }
   .form-wrapper {
     padding: 1.25rem;
