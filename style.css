@@ -570,12 +570,10 @@ footer {
     padding: 0 1rem;
   }
   .navbar {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    padding: 1rem;
+    display: none;
   }
   .hero {
+    padding-top: 4rem;
     padding-left: 1rem;
     padding-right: 1rem;
   }
