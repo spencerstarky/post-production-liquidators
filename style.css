@@ -17,12 +17,15 @@
   padding: 0;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: var(--font-body);
   background-color: var(--bg-color);
   color: var(--text-main);
   line-height: 1.6;
-  overflow-x: hidden;
 }
 
 .container {
@@ -582,7 +585,6 @@ footer {
     padding: 1.25rem;
   }
   .hero-visual {
-    overflow: hidden;
     width: 100%;
     margin-top: 2rem;
   }
@@ -591,7 +593,8 @@ footer {
     min-width: 650px;
     transform: rotateY(-15deg) rotateX(10deg) scale(0.55);
     transform-origin: top center;
-    margin-bottom: -150px;
+    margin-bottom: -120px;
+    box-shadow: none;
   }
   .form-wrapper h2 {
     font-size: 1.75rem;
