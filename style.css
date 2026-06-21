@@ -128,7 +128,7 @@ h1, h2, h3, h4 {
 .cta-primary:hover {
   transform: translateY(-2px);
   background-color: var(--accent-color);
-  color: #000;
+  color: var(--bg-surface);
 }
 
 /* Director's Clapboard - Floating right */
@@ -488,7 +488,7 @@ h1, h2, h3, h4 {
 
 .submit-btn:hover {
   transform: translateY(-2px);
-  background: #facc15;
+  background: var(--accent-hover);
 }
 
 /* Footer */
