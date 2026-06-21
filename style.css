@@ -583,6 +583,28 @@ footer {
   .form-wrapper {
     padding: 1.25rem;
   }
+  .form-wrapper h2 {
+    font-size: 1.75rem;
+  }
+  .form-wrapper > p {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+  .lead-form {
+    gap: 1rem;
+  }
+  .input-group input[type="text"],
+  .input-group input[type="email"],
+  .input-group input[type="tel"],
+  .input-group input[type="date"],
+  .input-group textarea,
+  .pill-content {
+    padding: 0.75rem;
+    font-size: 0.95rem;
+  }
+  .size-title {
+    font-size: 1rem;
+  }
   .radio-pill-group {
     flex-direction: column;
   }
