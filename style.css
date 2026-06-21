@@ -132,6 +132,10 @@ h1, h2, h3, h4 {
   color: var(--bg-surface);
 }
 
+.mobile-clapboard {
+  display: none;
+}
+
 /* Director's Clapboard - Floating right */
 .hero-visual {
   perspective: 1000px;
@@ -582,6 +586,19 @@ footer {
   }
   .form-wrapper {
     padding: 1.25rem;
+  }
+  .mobile-clapboard {
+    display: block;
+    text-align: center;
+    font-size: 6rem;
+    margin-top: 3rem;
+    line-height: 1;
+    filter: drop-shadow(0 10px 15px rgba(0,0,0,0.1));
+    animation: floatMobile 4s ease-in-out infinite;
+  }
+  @keyframes floatMobile {
+    0%, 100% { transform: translateY(0) rotate(-5deg); }
+    50% { transform: translateY(-10px) rotate(-10deg); }
   }
   .form-wrapper h2 {
     font-size: 1.75rem;
