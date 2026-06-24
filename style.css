@@ -687,3 +687,94 @@ footer {
   box-shadow: none;
   mix-blend-mode: multiply;
 }
+
+/* Nav Links */
+.navbar .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.navbar .nav-link {
+  color: var(--text-main);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.2s ease;
+}
+.navbar .nav-link:hover {
+  color: var(--primary-color);
+}
+
+/* SOP Page Styles */
+.sop-page {
+  padding: 8rem 0 6rem;
+  background-color: var(--bg-color);
+}
+.sop-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.sop-intro {
+  text-align: center;
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  margin-bottom: 4rem;
+  line-height: 1.7;
+}
+.sop-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.sop-step {
+  display: flex;
+  gap: 2rem;
+  background: white;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  border: 1px solid var(--border-color);
+}
+.step-number {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  background: var(--primary-color);
+  color: white;
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+.step-content h3 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--text-main);
+  margin-bottom: 1rem;
+}
+.step-content p {
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+.step-content p:last-child {
+  margin-bottom: 0;
+}
+.sop-footer {
+  margin-top: 5rem;
+  text-align: center;
+}
+.sop-footer .cta-primary {
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .sop-step {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+}
